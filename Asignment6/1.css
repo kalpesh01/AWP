@@ -1,0 +1,73 @@
+.container2 {
+    display: flex;
+    flex-direction: column;
+    /* align-items: ce; */
+    margin-left: 30px;
+    margin-top: 30px;
+    background-color: skyblue;
+    width: 22%;
+}
+
+.navbar {
+    background-color: rgb(55, 105, 55);
+    display: flex;
+    width: 100%;
+}
+
+.nb_name {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+
+.chatArea {
+    background-color: rgb(226, 202, 202);
+    width: 100%;
+    height: 50vh;
+    overflow-y: scroll;
+}
+
+.textArea {
+    background-color: rgb(55, 105, 55);
+    width: 100%;
+    height: 60px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+
+}
+
+.btn {
+    height: 30px;
+    width: 70px;
+    margin-left: 10px;
+    background-color: blue;
+    border: none;
+    border-radius: 10%;
+
+}
+
+.textB1 {
+    height: 30px;
+    margin-left: 10px;
+    outline: none;
+}
+
+.textB1:focus {
+    outline: none;
+    box-shadow: 2px 5px 8px cyan;
+
+}
+
+.card2 {
+    background-color: darkcyan;
+    width: 50%;
+    /* height: 25px; */
+    border-radius: 6px;
+    margin-top: 1px;
+    /* visibility: hidden; */
+}
+
+#child1 {
+    margin: 5px;
+}

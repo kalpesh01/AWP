@@ -1,0 +1,29 @@
+.main{
+    display: flex;
+    flex-direction: column;
+
+}
+.sub_cont1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: silver;
+    height: 10vh;
+    border-radius: 10px;
+    font-size: medium;
+}
+.sub_cont2{
+    display: flex;
+
+background-color:steelblue ;
+height: 50vh;
+}
+
+#logo{
+    flex: 1;
+    margin-left: 10px;
+}
+
+#login{
+    margin-right: 10px;
+}

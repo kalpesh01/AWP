@@ -1,0 +1,15 @@
+.container1{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background-color: rgb(118, 141, 243);
+    height: 60px;
+    border: 1px solid black;
+}
+
+.container2{
+    flex:1;padding: 10px;color: rgb(228, 76, 76);font-size: 32px;
+}
+.nav_ele{
+    margin-right: 10px;color: whitesmoke;border-bottom:2px solid tomato ;
+}
