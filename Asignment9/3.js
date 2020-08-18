@@ -13,7 +13,7 @@ function readText(e) {
     if (userComment != "") {
 
         var newElement = e.parentElement.parentElement.children[2].children[0].cloneNode(true);
-
+        newElement.style.visibility = "visible";
         newElement.children[0].innerHTML = userComment;
         e.parentElement.children[1].value = "";
 
@@ -28,4 +28,9 @@ function readText(e) {
         errdiv.style.color = "WHITE";
         errdiv.style.visibility = "visible";
     }
+}
+
+
+function ondelete(ab) {
+    ab.parentElement.parentElement.remove();
 }
