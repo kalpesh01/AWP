@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<script src="3.js"></script>
+<style>
+    input:focus {
+        outline: none;
+    }
+
+    .err {
+        visibility: hidden;
+        color: red;
+    }
+
+    #imgdiv {
+        background: url("mypic.JPG");
+        background-repeat: none;
+        background-size: cover;
+    }
+</style>
+
+<body>
+    <div class="container-fluid ">
+
+        <!-- post1 -->
+        <div class="row d-flex justify-content-center" id="post1">
+            <div class="col-6 d-flex flex-column">
+                <!-- row1 for Heading -->
+                <div class="row  border d-flex justify-content-center" id="imgdiv">
+                    <div class="col-12  d-flex justify-content-center align-items-center  text-primary "
+                        style="font-size: 32px; height: 400px;">
+
+                    </div>
+                    <div class="err">Error</div>
+                </div>
+
+                <!-- row2 for buttons -->
+                <div class="row">
+                    <button class="col-3 btn btn-outline-primary btn-block" id="likeBtn" onclick="likeHere()">Like <span
+                            id="likeBtnValue">0</span>
+                    </button>
+                    <input type="text" class="col-6 shadow-sm" placeholder="Enter Coomment Here" id="textBox1">
+                    <button class=" col-3 btn btn-outline-dark btn-block" onclick="readText(this)">Comment</button>
+                </div>
+
+                <!-- row3 for comment card -->
+                <div class="row mt-2 d-flex flex-column" id="cmnt1">
+                    <div class="d-flex">
+                        <div class="col-9 d-flex align-items-center  border-dark border-bottom ">
+                            sample text
+                        </div>
+                        <div class="col-3 p-0">
+                            <button class=" btn btn-outline-danger btn-block">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div></div>
+</body>
+
+</html>

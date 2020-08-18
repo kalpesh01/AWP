@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="2.js"></script>
+
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container1 {
+            background-color: silver;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 40px;
+            padding: 10px;
+            width: 300px;
+        }
+
+        .buttons {
+            margin: 10px;
+
+        }
+
+        .container2 {
+            background-color: teal;
+            /* height: 50vh; */
+            padding: 10px;
+            width: 300px;
+
+        }
+
+        .card {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 5px;
+            border-bottom: 2px solid black;
+        }
+
+        .textBox1 {
+            outline: none;
+            box-shadow: 3px 10px 12px black;
+        }
+
+        .err {
+            visibility: hidden;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container1">
+            <div class="text1"></div>
+            <div class="textBox1">
+                <input type="text" id="textBox1" placeholder="Enter the comment">
+            </div>
+            <div class="buttons">
+                <button class="btn1" id="likebtn" onclick="likeHere() ">Like </button>
+                <button class="btn2" id="cmnt" onclick="readHere()">Comment</button>
+            </div>
+
+            <div class="err" id="err1">error</div>
+        </div>
+
+        <div class="container2">
+
+            <div class="card">
+                <div class="text2" id="stext">sample text</div>
+                <button class="btn3" onclick="del(this)">Delete</button>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
+
+<!--  -->
